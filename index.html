@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Substeps - Open Source BDD Framework!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Substeps is an open source BDD framework enabling executable features to be composed of libraries of step implementations">
+
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="/assets/css/syntax-highlight.css">
+<link rel="stylesheet" href="/assets/css/font-awesome.min.css">-->
+
+<link href="/assets/css/fontface-static.css" rel="stylesheet" type="text/css"/>
+<!--
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+-->
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/assets/js/jquery-2.2.0.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<style>
+
+  .vcentre {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+  }
+
+</style>
+
+
+<script type="text/javascript">
+
+
+
+
+
+  function toggleSection(section, spanElem){
+
+    if ( $(spanElem).hasClass("dropup")){
+      // collapse
+
+      console.log("collapse")
+
+      $("#" + section).slideUp()
+
+
+//      $(spanElem).addClass("glyphicon-collapse-down")
+      $(spanElem).removeClass("dropup")
+
+    }
+    else {
+
+      console.log("expand")
+      // expand
+      $("#" + section).slideDown()
+
+
+//      $(spanElem).removeClass("glyphicon-collapse-down")
+      $(spanElem).addClass("dropup")
+
+    }
+
+
+  }
+
+</script> 
+</head>
+<body>
+
+
+<div class="container">
+	<div class="row">
+			<div class="col-lg-12">
+				<div class="bs-component">			
+                  <div class="jumbotron">
+
+                      <span style="font-size: 100px">Substeps</span>
+
+                      <p>An open source BDD framework</p>
+                  </div>
+				</div>
+			</div>
+	</div>
+
+  <div class="row">
+    <div class="col-lg-12">
+
+        <p class="text-center">
+        <a class="btn btn-primary btn-lg" href="/introduction/getting-started/">Getting started</a>
+
+      <a class="btn btn-primary btn-lg" href="/introduction/overview/">Docs</a>
+        </p>
+    </div>
+  </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <p class="text-center">
+              <span>This site and docs are in progress!</span>
+            </p>
+            <p class="text-center">
+                <span style="font-size: small">Whilst this site and these docs are in progress, the <a href="http://substeps.g2g3.digital/index.html">original</a> Technophobia / G2G3 site may be of use</span>
+            </p>
+        </div>
+    </div>
+
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+
+        <p class="text-center">
+          &copy; 2016 Substeps. All rights reserved.  Last published on 03-03-2016 23:04
+        </p>
+
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

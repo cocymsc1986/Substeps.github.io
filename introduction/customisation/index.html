@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<!--
+  ~ =========================================================================================
+  ~ Copyright © 2015 the Substeps project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file
+  ~ except in compliance with the License. You may obtain a copy of the License at
+  ~
+  ~  http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software distributed under the
+  ~ License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+  ~ either express or implied. See the License for the specific language governing permissions
+  ~ and limitations under the License.
+  ~ =========================================================================================
+  -->
+
+
+<html lang="en">
+  <head>
+    <title>Substeps | Customisation</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Substeps is an open source BDD framework enabling executable features to be composed of libraries of step implementations">
+
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="/assets/css/syntax-highlight.css">
+<link rel="stylesheet" href="/assets/css/font-awesome.min.css">-->
+
+<link href="/assets/css/fontface-static.css" rel="stylesheet" type="text/css"/>
+<!--
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+-->
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/assets/js/jquery-2.2.0.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<style>
+
+  .vcentre {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+  }
+
+</style>
+
+
+<script type="text/javascript">
+
+
+
+
+
+  function toggleSection(section, spanElem){
+
+    if ( $(spanElem).hasClass("dropup")){
+      // collapse
+
+      console.log("collapse")
+
+      $("#" + section).slideUp()
+
+
+//      $(spanElem).addClass("glyphicon-collapse-down")
+      $(spanElem).removeClass("dropup")
+
+    }
+    else {
+
+      console.log("expand")
+      // expand
+      $("#" + section).slideDown()
+
+
+//      $(spanElem).removeClass("glyphicon-collapse-down")
+      $(spanElem).addClass("dropup")
+
+    }
+
+
+  }
+
+</script>
+
+    <link href="/assets/css/prism-coy.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <div class="header">
+
+  <a href="https://github.com/Substeps/substeps-framework">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+         src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub"
+      data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="logo-wrap">
+
+
+          <a class="logo" href="/">
+            <img src="/assets/img/logo-200x200.png" height="65px" width="65px" alt="logo" />
+            <span style ="font-size: 60px; color: black">
+            <strong>sub</strong>steps</span>
+          </a>
+
+        </div>
+
+      </div>
+      <div class="col-sm-8">
+
+      </div>
+    </div>
+  </div>
+</div><!-- /.header -->
+
+<div class="header-bar">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <span class="upper white"><strong>Documentation</strong></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <!-- this is in a col-sm-3 -->
+
+<div id="doc-tree">
+  <ul class="dosc-sidebar">
+    <li>
+
+      <label>Introduction</label>
+
+      <ul >
+        <li><a href="/introduction/overview/">Overview</a></li>
+        <li><a href="/introduction/getting-started/">Getting started</a></li>
+          <li><a href="/introduction/configuration/">Configuration</a></li>
+          <li>
+              <a href="/introduction/customisation/">Customisation</a>
+              <ul>
+                  <li><a href="/introduction/customisation#step-implementations">Step Implementations</a></li>
+                  <li><a href="/introduction/customisation#execution-context">Execution Context</a></li>
+                  <li><a href="/introduction/customisation#setup-and-tear-down">Setup and tear down</a></li>
+
+              </ul>
+          </li>
+          <li>
+              <a href="/introduction/running/">Test execution</a>
+              <ul>
+                  <li><a href="/introduction/running#general-settings">General settings</a></li>
+                  <li><a href="/introduction/running#tags">Tags</a></li>
+                  <li><a href="/introduction/running#intellij">IntelliJ</a></li>
+                  <li><a href="/introduction/running#junit">Junit</a></li>
+                  <li><a href="/introduction/running#maven">Maven</a></li>
+                  <li><a href="/introduction/running#ant">Ant</a></li>
+
+              </ul>
+
+
+          </li>
+           <li><a href="/introduction/intellij-integration/">IntelliJ Integration</a></li>
+           <li><a href="/introduction/manual-setup/">Manual setup</a></li>
+          <!--
+                     <li><a href="/introduction/ci-integration/">CI</a></li>-->
+      </ul>
+    </li>
+
+
+    <li>
+      <label >Project Information</label>
+
+          <ul >
+            <li><a href="/introduction/project-info/support/">Support</a></li>
+            <li><a href="/introduction/project-info/history/">History</a></li>
+            <li><a href="/introduction/project-info/license/">License</a></li>
+          </ul>
+    </li>
+
+
+    <li>
+      <label >Webdriver StepImplementations</label>
+      <ul >
+            <li><a href="/webdriver/introduction/">Introduction</a></li>
+            <li>
+
+                <a href="/webdriver/step-implementations/">Step implementations</a>
+                <ul>
+                    <li><a href="/webdriver/step-implementations#assertions">Assertions</a></li>
+                    <li><a href="/webdriver/step-implementations#clicks">Clicks</a></li>
+                    <li><a href="/webdriver/step-implementations#forms">Forms</a></li>
+                    <li><a href="/webdriver/step-implementations#finders">Finders</a></li>
+
+
+
+                    <li><a href="/webdriver/step-implementations#miscellaneous">Miscellaneous</a></li>
+                    <li><a href="/webdriver/step-implementations#startstop">Startup / Shutdown</a></li>
+                    <li><a href="/webdriver/step-implementations#tables">Table</a></li>
+                    <li><a href="/webdriver/step-implementations#"></a></li>
+
+                </ul>
+            </li>
+            <li><a href="/webdriver/hints-and-tips/">Hints and tips</a></li>
+
+          </ul>
+
+    </li>
+  </ul>
+</div><!-- /#docs-tree -->
+
+          </div>
+          <div class="col-sm-9">
+            <h1 id="customisation">Customisation</h1>
+
+<p>You can build step implementations to do anything; <br />
+    - send and receive emails<br />
+    - query a database<br />
+    - send JMS messages<br />
+    - make ReST calls<br />
+    - whatever you like…</p>
+
+<p>To do so, you’ll need to implement your own step implementations..</p>
+
+<h3 id="step-implementations">Step Implementations</h3>
+
+<p>Implementing your own step implementations is easy, simply annotate the class and method:</p>
+
+<pre><code class="language-java">import com.technophobia.substeps.model.SubSteps.Step;
+import com.technophobia.substeps.model.SubSteps.StepImplementations;
+
+@StepImplementations
+public class MyStepImplementations {
+
+    @Step("DoSomething with parameter \"([^\"]*)\"")
+    public void exampleOne(final String param)  {
+        ...
+    }
+}
+</code></pre>
+
+<p>Standard java RegEx capture groups are used to extract parameters.  String parameters can be converted to other types with an additional annotation:</p>
+
+<pre><code class="language-java">import com.technophobia.substeps.model.SubSteps.StepParameter;
+import com.technophobia.substeps.model.parameter.IntegerConverter;
+
+    @Step("DoSomething with an int parameter \"([^\"]*)\"")
+    public void exampleTwo(@StepParameter(converter = IntegerConverter.class) final int param)  {
+        ...
+    }
+</code></pre>
+
+<p>It is also possible to pass an entire table as a step parameter.  For example within a scenario:</p>
+
+<pre><code class="language-gherkin">Scenario: A Sample scenario
+    DoSomething with a table parameter
+        |col1     | col2    |  col3   |
+        |row1-1   | row1-2  |  row1-3 |
+        |row2-1   | row2-2  |  row3-3 |
+</code></pre>
+
+<p>could be implemented with a step such as this</p>
+
+<pre><code class="language-java">    @Step("DoSomething with a table parameter")
+    public void exampleThree(final List&lt;Map&lt;String,String&gt;&gt; table)  {
+        ...
+    }
+</code></pre>
+
+<p>The each element of the list parameter representing a row, with values keyed by column values.</p>
+
+<p>NB. this feature is currently only available to step implementations used directly in scenarios, not step definitions.</p>
+
+<p>The step implementation class(es) will need to be registered in the pom in the <code>stepImplementationClassNames</code> section of the <code>executionConfig</code></p>
+
+<h3 id="execution-context">Execution Context</h3>
+
+<p>Throughout the test cycle, an execution context is bound to the current thread as a ThreadLocal.  This provides a mechanism by which data can be placed into a scoped context for subsequent use.  Scopes include suite, feature, scenario etc.  At the end of the scope, all data at that level is cleared, providing a safe mechanism to pass data between test elements whilst minimising the risk of polluting other scenarios.</p>
+
+<p>This can be useful for capturing the result of a particular function and using that value in a subsequent step.  The webdriver substep library uses this mechanism to make the initialised webdriver variable accessible across steps within a scenario. </p>
+
+<p>The execution context can be accessed thus:</p>
+
+<pre><code class="language-java">import com.technophobia.substeps.runner.ExecutionContext;
+
+// to put something into the execution context
+ExecutionContext.put(Scope.FEATURE, "my-key", "data");
+
+// and to retrieve
+String data =  (String)ExecutionContext.get(Scope.FEATURE, "my-key");
+</code></pre>
+
+<p>An alternative pattern is to declare a static mutable Supplier</p>
+
+<pre><code class="language-java">import com.technophobia.substeps.runner.ExecutionContextSupplier;
+import com.technophobia.substeps.runner.MutableSupplier;
+
+private static final MutableSupplier&lt;BigDecimal&gt; initialBalanceInContext = 
+    new ExecutionContextSupplier&lt;BigDecimal&gt;(Scope.SCENARIO, "initialBalance");
+
+initialBalanceInContext.set(currentBalance);
+
+BigDecimal initialBalance = initialBalanceInContext.get();
+
+</code></pre>
+
+<h3 id="setup-and-tear-down">Setup and tear down</h3>
+
+<p>The underlying implementation of test scenarios frequently require setup and tear down.  A number of annotations are provided on the <code>Annotations</code> interface to allow for setup and tear down hooks that are called before and after every scenario, feature or suite (all features). For example</p>
+
+<pre><code class="language-java">import com.technophobia.substeps.runner.setupteardown.Annotations;
+
+public class MySetupAndTearDown{
+    
+    @BeforeAllFeatures
+    public final void beforeAllFeaturesSetup() {
+        ...
+    }
+    
+    @BeforeEveryScenario
+    public void beforeScenario(){
+        ...
+    }
+}
+
+</code></pre>
+<p>Before and After methods are called symmetrically and where multiple setup methods are found for the same hook, execution order is determined by the methods found first (by the ordering of the step implementations in the pom), however such ordering should not be replied upon.</p>
+
+<p>The setup and tear down class can be specified either in the pom:</p>
+
+<pre><code class="language-xml">    &lt;executionConfig&gt;
+        ....
+        &lt;initialisationClass&gt;
+            &lt;param&gt;com.technophobia.webdriver.substeps.example.ExampleSetupAndTearDown&lt;/param&gt;
+        &lt;/initialisationClass&gt;
+    &lt;/executionConfig&gt;
+
+</code></pre>
+
+<p>or alternatively, since any setup and tear down is probably associated with a set of step implementations in a particular class, <br />
+an attribute can be added to the StepImplementation annotation:</p>
+
+<pre><code class="language-java">@StepImplementations( requiredInitialisationClasses = {MySetupClass.class}
+public class MyStepImplementations {
+    ...
+</code></pre>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+
+        <p class="text-center">
+          &copy; 2016 Substeps. All rights reserved.  Last published on 03-03-2016 23:04
+        </p>
+
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <script src="/assets/js/prism-coy.js"></script>
+
+
+    <script>
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-73204026-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
